@@ -1,0 +1,1145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tours</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style_tores.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="d-flex flex-wrap justify-content-around align-items-center">
+      <div class="Mylogo">
+        <a href="home.html"
+          ><img src="assets/images/logos/logo.png" alt="" />
+        </a>
+      </div>
+      <div class="_nav">
+        <button
+          class="nav-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavMenu"
+          aria-controls="mainNavMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav justify-content-end fs-6 fw-bold collapse" id="mainNavMenu">
+          <li class="nav-item">
+            <a
+              class="nav-link text-custem active"
+              aria-current="page"
+              href="home.html"
+              >home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custem" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custem" href="contact.html">contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link text-custem dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              shop
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-custem" href="shop.html"
+                  >Ecommerce</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="cart.html">cart</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link text-custem dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              pages
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-custem" href="services.html"
+                  >services</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="tours.html">tours</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="gallary.html"
+                  >gallary</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="login.html">login</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item border-0">
+            <a
+              class="nav-link rounded-pill text-white bg-custem"
+              href="booking.html"
+              >book now</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ================= TOURS ================= -->
+
+    <section class="tours">
+      <div class="section-title">
+        <h2>Popular Tours</h2>
+
+        <p>Choose your perfect trip and start your adventure</p>
+      </div>
+
+      <!-- FILTERS -->
+
+      <div class="filters">
+        <select id="destinationFilter">
+          <option value="all">All Destinations</option>
+          <option value="cairo">Cairo</option>
+          <option value="luxor">Luxor</option>
+          <option value="aswan">Aswan</option>
+          <option value="hurghada">Hurghada</option>
+        </select>
+
+        <select id="typeFilter">
+          <option value="all">Trip Type</option>
+          <option value="historical">Historical</option>
+          <option value="beach">Beach</option>
+          <option value="adventure">Adventure</option>
+        </select>
+
+        <select id="tripFilter">
+          <option value="all">Trip duration</option>
+          <option value="day">Day Trip</option>
+          <option value="package">Package</option>
+        </select>
+      </div>
+
+      <!-- TOUR CARDS -->
+
+      <div class="tour-container" id="tourContainer">
+        <!-- CARD 1 -->
+
+        <!-- CARD 1 -->
+        <div
+          class="tour-card"
+          data-destination="cairo"
+          data-type="historical"
+          data-trip="day"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/cairo/pyramids.jpg"
+              alt="Pyramids"
+            />
+
+            <span class="popular">Popular</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>Cairo & Pyramids</h3>
+
+            <div class="rating">
+              ⭐ 4.8
+              <span>(120 reviews)</span>
+            </div>
+
+            <p class="duration">1 Day Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>850 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>📍 Giza Pyramids</li>
+                <li>🗿 Great Sphinx</li>
+                <li>🏛️ Egyptian Museum</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 1 Day</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div
+          class="tour-card"
+          data-destination="cairo"
+          data-type="historical"
+          data-trip="day"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/cairo/huge_Egyptian_museume.jpg"
+              alt="The Grand Egyptian Museum"
+            />
+
+            <span class="popular">Popular</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>The Grand Egyptian Museum</h3>
+
+            <div class="rating">
+              ⭐ 4.9
+              <span>(113 reviews)</span>
+            </div>
+
+            <p class="duration">1 Day Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>1000 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🏛️ Museum ticket</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 1 Day</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+
+        <div
+          class="tour-card"
+          data-destination="cairo"
+          data-type="historical"
+          data-trip="day"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/cairo/elbaron-house.jpg"
+              alt="Baron Palace"
+            />
+          </div>
+
+          <div class="tour-info">
+            <h3>Baron Palace</h3>
+
+            <div class="rating">
+              ⭐ 4.2
+              <span>(45 reviews)</span>
+            </div>
+
+            <p class="duration">1 Day Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>700 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🏛️ Palace entrance ticket</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 1 Day</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+
+        <div
+          class="tour-card"
+          data-destination="cairo"
+          data-type="historical"
+          data-trip="day"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/cairo/salah_elden_caastle.jpg"
+              alt="Saladin Citadel"
+            />
+          </div>
+
+          <div class="tour-info">
+            <h3>Saladin Citadel</h3>
+
+            <div class="rating">
+              ⭐ 4.5
+              <span>(35 reviews)</span>
+            </div>
+
+            <p class="duration">1 Day Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>600 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🏛️ Castle entrance ticket</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 1 Day</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 5 -->
+
+        <div
+          class="tour-card"
+          data-destination="cairo"
+          data-type="adventure"
+          data-trip="day"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/cairo/cairo_tower.png"
+              alt="Cairo Tower"
+            />
+
+            <span class="popular">Popular</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>Cairo Tower</h3>
+
+            <div class="rating">
+              ⭐ 4.1
+              <span>(57 reviews)</span>
+            </div>
+
+            <p class="duration">1 Day Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>600 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🏛️ Tower admission ticket</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 1 Day</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 6 -->
+
+        <div
+          class="tour-card"
+          data-destination="luxor"
+          data-type="historical"
+          data-trip="day"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/luxor/luxor_temple.jpg"
+              alt="Luxor"
+            />
+
+            <span class="popular">Popular</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>Luxor Temples</h3>
+
+            <div class="rating">
+              ⭐ 4.9
+              <span>(95 reviews)</span>
+            </div>
+
+            <p class="duration">1 Day Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>1200 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🏛️ Karnak Temple</li>
+                <li>🏛️ Luxor Temple</li>
+                <li>🌅 Nile River</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 1 Day</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 7 -->
+        <div
+          class="tour-card"
+          data-destination="luxor"
+          data-type="adventure"
+          data-trip="package"
+        >
+          <div class="tour-image">
+            <img src="assets/images/tours_images/luxor/luxor.jpg" alt="Luxor" />
+
+            <span class="popular">Popular</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>Luxor Tour</h3>
+
+            <div class="rating">
+              ⭐ 4.9
+              <span>(150 reviews)</span>
+            </div>
+
+            <p class="duration">7 days trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>7800 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🏛️ Karnak Temple</li>
+                <li>🏛️ Luxor Temple</li>
+                <li>🌅 Two days on a floating hotel</li>
+                <li>🏨 5-Star Hotel</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 7 Days</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 8 -->
+        <div
+          class="tour-card"
+          data-destination="luxor"
+          data-type="adventure"
+          data-trip="package"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/luxor/luxor_2.jpeg"
+              alt="Luxor"
+            />
+
+            <span class="popular">Popular</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>Luxor Huge Tour</h3>
+
+            <div class="rating">
+              ⭐ 4.9
+              <span>(115 reviews)</span>
+            </div>
+
+            <p class="duration">15 Days Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong> 13500 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🏛️ Karnak Temple</li>
+                <li>🏛️ Luxor Temple</li>
+                <li>🏛️ The Temple of Queen Hatshepsut</li>
+                <li>🏛️ Kings Vally</li>
+                <li>🎈 Hot Air Balloon Experience</li>
+                <li>🌅 5 days on a floating hotel</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 15 Days</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 9 -->
+
+        <div
+          class="tour-card"
+          data-destination="cairo"
+          data-type="adventure"
+          data-trip="package"
+        >
+          <div class="tour-image">
+            <img src="assets/images/tours_images/cairo/cairo.jpg" alt="cairo" />
+          </div>
+
+          <div class="tour-info">
+            <h3>A Tour in cairo</h3>
+
+            <div class="rating">
+              ⭐ 4.3
+              <span>(38 reviews)</span>
+            </div>
+
+            <p class="duration">7 days Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>4300 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🏛️ Pyramids</li>
+                <li>
+                  🏛️ Every day, a street from one of Egypt's historic streets.
+                </li>
+                <li>🌅 Two days on a floating hotel</li>
+                <li>🏨 5-Star Hotel</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 7 Days</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 10 -->
+
+        <div
+          class="tour-card"
+          data-destination="cairo"
+          data-type="adventure"
+          data-trip="package"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/cairo/cairo_2.jpg"
+              alt="cairo"
+            />
+
+            <span class="popular">Popular</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>Cairo Huge Tour</h3>
+
+            <div class="rating">
+              ⭐ 4.6
+              <span>(134 reviews)</span>
+            </div>
+
+            <p class="duration">15 Days Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>10999EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🏛️ Pyramids</li>
+                <li>🏛️ The Grand Egyptian Museum</li>
+                <li>🏛️ Saladin Citadel</li>
+                <li>🏛️ The Egyptian Museum</li>
+                <li>
+                  🏛️ Every day, a street from one of Egypt's historic streets.
+                </li>
+                <li>🌅 5 days on a floating hotel</li>
+                <li>🏨 5-Star Hotel</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 15 Days</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 11 -->
+
+        <div
+          class="tour-card"
+          data-destination="hurghada"
+          data-type="beach"
+          data-trip="day"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/hurghada/dream_beach.jpg"
+              alt="Luxor"
+            />
+          </div>
+
+          <div class="tour-info">
+            <h3>Dream beach</h3>
+
+            <div class="rating">
+              ⭐ 4.1
+              <span>(45 reviews)</span>
+            </div>
+
+            <p class="duration">1 Day Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>800 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🚤 Beach entry ticket</li>
+                <li>🍳 Breakfast</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 1 Day</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 12 -->
+
+        <div
+          class="tour-card"
+          data-destination="hurghada"
+          data-type="beach"
+          data-trip="day"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/hurghada/orange_island.jpg"
+              alt="hurghada"
+            />
+
+            <span class="popular">Popular</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>Orange Bay / Giftun Island</h3>
+
+            <div class="rating">
+              ⭐ 4.7
+              <span>(172 reviews)</span>
+            </div>
+
+            <p class="duration">1 Day Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>1700 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🐠 Snorkeling</li>
+                <li>🏝️ Giftun Island</li>
+                <li>🍳 Breakfast</li>
+                <li>🍽️ Lunch</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 1 Day</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 13 -->
+
+        <div
+          class="tour-card"
+          data-destination="hurghada"
+          data-type="beach"
+          data-trip="day"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/hurghada/diving.jpg"
+              alt="Diving"
+            />
+          </div>
+
+          <div class="tour-info">
+            <h3>Diving</h3>
+
+            <div class="rating">
+              ⭐ 4.1
+              <span>(25 reviews)</span>
+            </div>
+
+            <p class="duration">1 Day Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>2100 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🤿 Diving</li>
+                <li>🐠 Snorkeling</li>
+                <li>🏝️ Giftun Island</li>
+                <li>🍳 Breakfast</li>
+                <li>🍽️ Lunch</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 1 Day</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 14 -->
+
+        <div
+          class="tour-card"
+          data-destination="hurghada"
+          data-type="adventure"
+          data-trip="day"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/hurghada/safari.jpg"
+              alt="hurghada"
+            />
+
+            <span class="popular">Popular</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>Safari</h3>
+
+            <div class="rating">
+              ⭐ 4.3
+              <span>(75 reviews)</span>
+            </div>
+
+            <p class="duration">1 Day Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>1999 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🍳 Breakfast</li>
+                <li>🍽️ Lunch</li>
+                <li>🏜️ Safari</li>
+                <li>🐪 Camel Ride</li>
+                <li>🌌 Stargazing</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 1 Day</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 15 -->
+
+        <div
+          class="tour-card"
+          data-destination="hurghada"
+          data-type="adventure"
+          data-trip="package"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/hurghada/hurghada.jpg"
+              alt="hurghada"
+            />
+
+            <span class="popular">Popular</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>Hurghada Tour</h3>
+
+            <div class="rating">
+              ⭐ 4.4
+              <span>(75 reviews)</span>
+            </div>
+
+            <p class="duration">7 Days Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>12999 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🏨 5-Star Hotel</li>
+                <li>🏜️ Safari</li>
+                <li>🏝️ Giftun Island</li>
+                <li>🐠 Snorkeling</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 7 Days</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 16 -->
+
+        <div
+          class="tour-card"
+          data-destination="hurghada"
+          data-type="adventure"
+          data-trip="package"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/hurghada/hurghada_2.jpg"
+              alt="hurghada"
+            />
+
+            <span class="popular">Popular</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>Hurghada Huge Tour</h3>
+
+            <div class="rating">
+              ⭐ 4.6
+              <span>(128 reviews)</span>
+            </div>
+
+            <p class="duration">15 Days Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>21600 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🏨 5-Star Hotel</li>
+                <li>🏜️ Safari</li>
+                <li>🏝️ Giftun Island</li>
+                <li>🤿 Diving</li>
+                <li>🐠 Snorkeling</li>
+                <li>🌌 Stargazing</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 15 Days</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 17 -->
+
+        <div
+          class="tour-card"
+          data-destination="aswan"
+          data-type="adventure"
+          data-trip="package"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/aswan/abu-simbel-temple.jpg"
+              alt="aswan"
+            />
+
+            <span class="popular">Popular</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>Aswan Tour</h3>
+
+            <div class="rating">
+              ⭐ 4.8
+              <span>(44 reviews)</span>
+            </div>
+
+            <p class="duration">7 Days Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>13000 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🏛️ Philae Temple</li>
+                <li>🏺 Nubian Museum</li>
+                <li>⛵ Felucca Ride</li>
+                <li>🏘️ Nubian Village</li>
+                <li>🏜️ Desert Safari</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 7 Days</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 18 -->
+
+        <div
+          class="tour-card"
+          data-destination="aswan"
+          data-type="adventure"
+          data-trip="package"
+        >
+          <div class="tour-image">
+            <img
+              src="assets/images/tours_images/aswan/aswan_2.jpg"
+              alt="aswan"
+            />
+          </div>
+
+          <div class="tour-info">
+            <h3>Aswan Huge Tour</h3>
+
+            <div class="rating">
+              ⭐ 4.9
+              <span>(122 reviews)</span>
+            </div>
+
+            <p class="duration">15 Days Trip</p>
+
+            <div class="card-bottom">
+              <div class="price">
+                <small>From</small>
+                <strong>22500 EGP</strong>
+              </div>
+
+              <a href="#" class="details-btn"> Details </a>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="tour-details">
+              <h4>Tour Details</h4>
+
+              <ul>
+                <li>🏛️ Philae Temple</li>
+                <li>🏛️ Kalabsha Temple</li>
+                <li>🗿 Unfinished Obelisk</li>
+                <li>🏺 Nubian Museum</li>
+                <li>⛵ Felucca Ride</li>
+                <li>🏘️ Nubian Village</li>
+                <li>🏜️ Desert Safari</li>
+                <li>🏝️ Elephantine Island</li>
+                <li>🚤 Nile Cruise</li>
+                <li>🚐 Transportation included</li>
+                <li>👨‍🏫 Professional tour guide</li>
+                <li>⏱️ Duration: 1 Day</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+    </section>
+
+    <a href="#" class="back-to-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <div class="_footer">
+      <div class="_container">
+        <div class="logo_rights d-flex flex-column">
+          <div class="logo">
+            <img src="assets/images/logos/logo.png" alt="" />
+          </div>
+          <p>
+            All rights reserved. ©2019
+            <a href="" class="text-white">W3layouts</a>
+          </p>
+        </div>
+
+        <div class="about d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">about</p></div>
+          <a href="about.html" class="text-white">about</a>
+          <a href="services.html" class="text-white">services</a>
+        </div>
+        <div class="pages d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">pages</p></div>
+          <a href="shop.html" class="text-white">products</a>
+          <a href="contact.html" class="text-white">contact us</a>
+          <a href="login.html" class="text-white">login</a>
+          <a href="signup.html" class="text-white">signup</a>
+        </div>
+        <div class="subscribe d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">subscribe</p></div>
+          <form action="">
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                aria-label="Email"
+                aria-describedby="basic-addon2"
+              />
+              <a href="" class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-paper-plane"></i
+              ></a>
+            </div>
+          </form>
+          <p>
+            Subscribe to our mailing list and get updates to your email inbox.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/blugin_tores.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

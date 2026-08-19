@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-commerce | RE7LA</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/cart-&-shop.css">
+</head>
+
+
+<body>
+
+
+<!-- ================================
+     HEADER
+================================ -->
+
+    <header class="d-flex flex-wrap justify-content-around align-items-center">
+      <div class="Mylogo">
+        <a href="home.html"
+          ><img src="assets/images/logos/logo.png" alt="" />
+        </a>
+      </div>
+      <div class="_nav">
+        <button
+          class="nav-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavMenu"
+          aria-controls="mainNavMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav justify-content-end fs-6 fw-bold collapse" id="mainNavMenu">
+          <li class="nav-item">
+            <a
+              class="nav-link text-custem active"
+              aria-current="page"
+              href="home.html"
+              >home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custem" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custem" href="contact.html">contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link text-custem dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              shop
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-custem" href="shop.html"
+                  >Ecommerce</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="cart.html">cart</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link text-custem dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              pages
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-custem" href="services.html"
+                  >services</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="tours.html">tours</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="gallary.html"
+                  >gallary</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="login.html">login</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item border-0">
+            <a
+              class="nav-link rounded-pill text-white bg-custem"
+              href="booking.html"
+              >book now</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+
+<!-- ================================
+     PAGE TITLE
+================================ -->
+
+<section class="page-title">
+
+    <div class="container">
+
+        <h1>
+            E-commerce
+        </h1>
+
+        <p>
+            Travel Bags & Accessories
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     PRODUCTS
+================================ -->
+
+<section class="products-section">
+
+    <div class="container">
+
+        <div
+            class="products-grid"
+            id="products-container">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     FOOTER
+================================ -->
+
+    <a href="#" class="back-to-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <div class="_footer">
+      <div class="_container">
+        <div class="logo_rights d-flex flex-column">
+          <div class="logo">
+            <img src="assets/images/logos/logo.png" alt="" />
+          </div>
+          <p>
+            All rights reserved. ©2019
+            <a href="" class="text-white">W3layouts</a>
+          </p>
+        </div>
+
+        <div class="about d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">about</p></div>
+          <a href="about.html" class="text-white">about</a>
+          <a href="services.html" class="text-white">services</a>
+        </div>
+        <div class="pages d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">pages</p></div>
+          <a href="shop.html" class="text-white">products</a>
+          <a href="contact.html" class="text-white">contact us</a>
+          <a href="login.html" class="text-white">login</a>
+          <a href="signup.html" class="text-white">signup</a>
+        </div>
+        <div class="subscribe d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">subscribe</p></div>
+          <form action="">
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                aria-label="Email"
+                aria-describedby="basic-addon2"
+              />
+              <a href="" class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-paper-plane"></i
+              ></a>
+            </div>
+          </form>
+          <p>
+            Subscribe to our mailing list and get updates to your email inbox.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/cart-&-shop.js"></script>
+
+</body>
+
+</html>

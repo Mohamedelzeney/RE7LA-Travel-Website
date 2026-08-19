@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - RE7LA</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/about.css" />
+  </head>
+  <body>
+    <!-- <header class="hero-banner">
+        <div class="wrapper" style="padding-top: 0; padding-bottom: 0;">
+            <h1>Travel Egypt</h1>
+            <p>Tailored tour packages across Egypt's most iconic destinations.</p>
+        </div>
+    </header> -->
+
+    <header class="d-flex flex-wrap justify-content-around align-items-center">
+      <div class="Mylogo">
+        <a href="home.html"
+          ><img src="assets/images/logos/logo.png" alt="" />
+        </a>
+      </div>
+      <div class="_nav">
+        <button
+          class="nav-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavMenu"
+          aria-controls="mainNavMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav justify-content-end fs-6 fw-bold collapse" id="mainNavMenu">
+          <li class="nav-item">
+            <a
+              class="nav-link text-custem active"
+              aria-current="page"
+              href="home.html"
+              >home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custem" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custem" href="contact.html">contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link text-custem dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              shop
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-custem" href="shop.html"
+                  >Ecommerce</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="cart.html">cart</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link text-custem dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              pages
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-custem" href="services.html"
+                  >services</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="tours.html">tours</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="gallary.html"
+                  >gallary</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="login.html">login</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item border-0">
+            <a
+              class="nav-link rounded-pill text-white bg-custem"
+              href="booking.html"
+              >book now</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="wrapper">
+      <section class="vision-block">
+        <div class="heading-group">
+          <h2>Our Vision</h2>
+        </div>
+        <p>
+          "Redefining travel across Egypt by connecting travelers with
+          extraordinary destinations through straightforward booking, verified
+          itineraries, and consistent local support."
+        </p>
+      </section>
+
+      <section class="catalog-section">
+        <div class="heading-group">
+          <h2>Explore Destinations</h2>
+        </div>
+
+        <div class="catalog-grid">
+          <div
+            class="place-card"
+            onclick="
+              showOverview(
+                'cairo',
+                'Cairo',
+                'Giza Plateau, Egyptian Museum, Khan el-Khalili, Citadel of Saladin.',
+              )
+            "
+          >
+            <img src="assets/images/about/cairo.jpg" alt="Cairo" class="place-thumb" />
+            <div class="place-details">
+              <div>
+                <h3><i class="fas fa-landmark"></i> Cairo</h3>
+                <p>Explore ancient landmarks, museums, and historic markets.</p>
+              </div>
+              <span class="card-action"
+                >View Overview & Reviews <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="place-card"
+            onclick="
+              showOverview(
+                'luxor',
+                'Luxor',
+                'Valley of the Kings, Karnak Temple Complex, Sunrise Hot Air Balloons.',
+              )
+            "
+          >
+            <img src="assets/images/about/luxor.jpg" alt="Luxor" class="place-thumb" />
+            <div class="place-details">
+              <div>
+                <h3><i class="fas fa-monument"></i> Luxor</h3>
+                <p>Discover open-air temples, royal tombs, and Nile views.</p>
+              </div>
+              <span class="card-action"
+                >View Overview & Reviews <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="place-card"
+            onclick="
+              showOverview(
+                'aswan',
+                'Aswan',
+                'Philae Temple, Abu Simbel day tours, Felucca sailing cruises.',
+              )
+            "
+          >
+            <img src="assets/images/about/aswan.jpg" alt="Aswan" class="place-thumb" />
+            <div class="place-details">
+              <div>
+                <h3><i class="fas fa-ship"></i> Aswan</h3>
+                <p>
+                  Nile cruises, Nubian cultural villages, and island temples.
+                </p>
+              </div>
+              <span class="card-action"
+                >View Overview & Reviews <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="place-card"
+            onclick="
+              showOverview(
+                'alex',
+                'Alexandria',
+                'Citadel of Qaitbay, Bibliotheca Alexandrina, Montaza Palace Gardens.',
+              )
+            "
+          >
+            <img src="assets/images/about/alex.jpg" alt="Alexandria" class="place-thumb" />
+            <div class="place-details">
+              <div>
+                <h3><i class="fas fa-water"></i> Alexandria</h3>
+                <p>
+                  Coastal Citadel, historic library, and Mediterranean seafood
+                  spots.
+                </p>
+              </div>
+              <span class="card-action"
+                >View Overview & Reviews <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="place-card"
+            onclick="
+              showOverview(
+                'portsaid',
+                'Port Said',
+                'Suez Canal promenade, Historic Lighthouse, Free-Zone markets.',
+              )
+            "
+          >
+            <img
+              src="assets/images/about/portsaid.jpg"
+              alt="Port Said"
+              class="place-thumb"
+            />
+            <div class="place-details">
+              <div>
+                <h3><i class="fas fa-anchor"></i> Port Said</h3>
+                <p>
+                  Canal boardwalks, historic architecture, and local ferries.
+                </p>
+              </div>
+              <span class="card-action"
+                >View Overview & Reviews <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="place-card"
+            onclick="
+              showOverview(
+                'fayoum',
+                'Fayoum',
+                'Wadi El-Rayan waterfalls, Magic Lake, Tunis Pottery Village.',
+              )
+            "
+          >
+            <img src="assets/images/about/fayoum.jpg" alt="Fayoum" class="place-thumb" />
+            <div class="place-details">
+              <div>
+                <h3><i class="fas fa-mountain"></i> Fayoum</h3>
+                <p>
+                  Desert oases, natural lakes, and artisanal pottery workshops.
+                </p>
+              </div>
+              <span class="card-action"
+                >View Overview & Reviews <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="place-card"
+            onclick="
+              showOverview(
+                'siwa',
+                'Siwa Oasis',
+                'Salt Lake swimming, Cleopatra Spring, Great Sand Sea safaris.',
+              )
+            "
+          >
+            <img src="assets/images/about/siwa.jpg" alt="Siwa" class="place-thumb" />
+            <div class="place-details">
+              <div>
+                <h3><i class="fas fa-sun"></i> Siwa</h3>
+                <p>
+                  Healing salt springs, ancient fortresses, and desert
+                  landscapes.
+                </p>
+              </div>
+              <span class="card-action"
+                >View Overview & Reviews <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="place-card"
+            onclick="
+              showOverview(
+                'dahab',
+                'Dahab',
+                'Blue Hole diving, Canyon trails, Mount Sinai summit hikes.',
+              )
+            "
+          >
+            <img src="assets/images/about/dahab.jpg" alt="Dahab" class="place-thumb" />
+            <div class="place-details">
+              <div>
+                <h3><i class="fas fa-fish"></i> Dahab</h3>
+                <p>Relaxed beach promenade, reef diving, and mountain hikes.</p>
+              </div>
+              <span class="card-action"
+                >View Overview & Reviews <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="place-card"
+            onclick="
+              showOverview(
+                'nweiba',
+                'Nuweiba',
+                'Wishwashi Canyon, Seaside Bedouin camps, Snorkeling spots.',
+              )
+            "
+          >
+            <img src="assets/images/about/nweiba.jpg" alt="Nuweiba" class="place-thumb" />
+            <div class="place-details">
+              <div>
+                <h3><i class="fas fa-campground"></i> Nuweiba</h3>
+                <p>
+                  Secluded beach camps, mountain valleys, and natural pools.
+                </p>
+              </div>
+              <span class="card-action"
+                >View Overview & Reviews <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="place-card"
+            onclick="
+              showOverview(
+                'sharm',
+                'Sharm El-Sheikh',
+                'Ras Mohamed Reserve, Naama Bay, Red Sea diving spots.',
+              )
+            "
+          >
+            <img
+              src="assets/images/about/sharm.jpg"
+              alt="Sharm El-Sheikh"
+              class="place-thumb"
+            />
+            <div class="place-details">
+              <div>
+                <h3><i class="fas fa-umbrella-beach"></i> Sharm El-Sheikh</h3>
+                <p>
+                  Beachfront resorts, coral diving, and desert excursion trips.
+                </p>
+              </div>
+              <span class="card-action"
+                >View Overview & Reviews <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="place-card"
+            onclick="
+              showOverview(
+                'matrouh',
+                'Marsa Matrouh',
+                'Ageeba Cove, Cleopatra Beach, White-sand shorelines.',
+              )
+            "
+          >
+            <img
+              src="assets/images/about/matrouh.jpg"
+              alt="Marsa Matrouh"
+              class="place-thumb"
+            />
+            <div class="place-details">
+              <div>
+                <h3><i class="fas fa-swimmer"></i> Marsa Matrouh</h3>
+                <p>
+                  Clear turquoise waters, quiet coves, and soft sand beaches.
+                </p>
+              </div>
+              <span class="card-action"
+                >View Overview & Reviews <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="place-card"
+            onclick="
+              showOverview(
+                'alamein',
+                'New Alamein',
+                'North Coast beach clubs, Alamein Towers, Modern Marina.',
+              )
+            "
+          >
+            <img
+              src="assets/images/about/alamein.jpg"
+              alt="New Alamein"
+              class="place-thumb"
+            />
+            <div class="place-details">
+              <div>
+                <h3><i class="fas fa-building"></i> New Alamein</h3>
+                <p>
+                  Modern coastal towers, dining venues, and Mediterranean
+                  resorts.
+                </p>
+              </div>
+              <span class="card-action"
+                >View Overview & Reviews <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="value-props">
+        <div class="heading-group">
+          <h2>Why Book With Us</h2>
+          <p
+            style="font-size: 0.9rem; color: var(--text-muted); margin-top: 5px"
+          >
+            Click on any feature to learn more details
+          </p>
+        </div>
+
+        <div class="props-layout">
+          <div class="prop-item" onclick="showFeatureDetails('daily_tours')">
+            <div class="icon-box"><i class="fas fa-calendar-day"></i></div>
+            <h3>Daily Guided Tours</h3>
+          </div>
+
+          <div class="prop-item" onclick="showFeatureDetails('cycling')">
+            <div class="icon-box"><i class="fas fa-bicycle"></i></div>
+            <h3>Cycling Trips</h3>
+          </div>
+
+          <div class="prop-item" onclick="showFeatureDetails('support')">
+            <div class="icon-box"><i class="fas fa-headset"></i></div>
+            <h3>24/7 Support</h3>
+          </div>
+
+          <div class="prop-item" onclick="showFeatureDetails('eco_lodges')">
+            <div class="icon-box"><i class="fas fa-tree"></i></div>
+            <h3>Eco Lodges & Tours</h3>
+          </div>
+
+          <div class="prop-item" onclick="showFeatureDetails('bus_transport')">
+            <div class="icon-box"><i class="fas fa-bus"></i></div>
+            <h3>Bus Transport</h3>
+          </div>
+
+          <div
+            class="prop-item"
+            onclick="showFeatureDetails('new_destinations')"
+          >
+            <div class="icon-box"><i class="fas fa-compass"></i></div>
+            <h3>New Destinations</h3>
+          </div>
+
+          <div
+            class="prop-item"
+            onclick="showFeatureDetails('desert_journeys')"
+          >
+            <div class="icon-box"><i class="fas fa-route"></i></div>
+            <h3>Desert Journeys</h3>
+          </div>
+
+          <div class="prop-item" onclick="showFeatureDetails('wildlife')">
+            <div class="icon-box"><i class="fas fa-heart"></i></div>
+            <h3>Wildlife Reserves</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="checkout-box" id="bookingForm">
+        <div class="heading-group">
+          <h2>Quick Reservation</h2>
+        </div>
+
+        <div class="support-strip">
+          <span>Direct Support: +201090684413</span>
+          <a
+            href="https://wa.me/201090684413"
+            target="_blank"
+            class="btn-whatsapp"
+          >
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+
+        <form action="#" method="POST" class="form-grid">
+          <div class="field-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="01xxxxxxxxx"
+              required
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="destination">Destination</label>
+            <select id="destination" name="destination" required>
+              <option value="">Select city...</option>
+              <option value="cairo">Cairo</option>
+              <option value="luxor">Luxor</option>
+              <option value="aswan">Aswan</option>
+              <option value="alex">Alexandria</option>
+              <option value="portsaid">Port Said</option>
+              <option value="fayoum">Fayoum</option>
+              <option value="siwa">Siwa</option>
+              <option value="dahab">Dahab</option>
+              <option value="nweiba">Nuweiba</option>
+              <option value="sharm">Sharm El-Sheikh</option>
+              <option value="matrouh">Marsa Matrouh</option>
+              <option value="alamein">New Alamein</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="startDate">Check-in Date</label>
+            <input type="date" id="startDate" name="startDate" required />
+          </div>
+
+          <div class="field-group">
+            <label for="endDate">Check-out Date</label>
+            <input type="date" id="endDate" name="endDate" required />
+          </div>
+
+          <button type="submit" class="btn-submit">Submit Reservation</button>
+        </form>
+      </section>
+
+      <section>
+        <div class="heading-group">
+          <h2>Engineering Team</h2>
+        </div>
+
+        <div class="team-grid">
+          <div class="member-card" style="border-color: var(--brand-accent)">
+            <div class="member-avatar"><i class="fas fa-code"></i></div>
+            <h3>Abdulrahman Al-Mansoub</h3>
+            <p class="role">About Page Specialist</p>
+            <p class="bio">
+              Maintains core page structure and destination catalog integration.
+            </p>
+          </div>
+
+          <div class="member-card">
+            <div class="member-avatar"><i class="fas fa-layer-group"></i></div>
+            <h3>Mohamed.Elzeny</h3>
+            <p class="role">Home & Auth Dev</p>
+            <p class="bio">
+              Focuses on authentication flows and index page modules.
+            </p>
+          </div>
+
+          <div class="member-card">
+            <div class="member-avatar"><i class="fas fa-calendar-alt"></i></div>
+            <h3>Eslam Ahmed Hassan</h3>
+            <p class="role">Booking & Tours Dev</p>
+            <p class="bio">
+              Handles reservation state logic and tour package views.
+            </p>
+          </div>
+
+          <div class="member-card">
+            <div class="member-avatar">
+              <i class="fas fa-concierge-bell"></i>
+            </div>
+            <h3>Zeyad Yasser</h3>
+            <p class="role">Services & Gallery Dev</p>
+            <p class="bio">
+              Builds image assets and additional service section layouts.
+            </p>
+          </div>
+
+          <div class="member-card">
+            <div class="member-avatar"><i class="fas fa-shopping-bag"></i></div>
+            <h3>Abdulrahman Ali</h3>
+            <p class="role">E-commerce & Cart Dev</p>
+            <p class="bio">
+              Manages checkout components and gear shop features.
+            </p>
+          </div>
+
+          <div class="member-card">
+            <div class="member-avatar"><i class="fas fa-headset"></i></div>
+            <h3>Mahmoud Khalaf</h3>
+            <p class="role">Contact & Support Dev</p>
+            <p class="bio">
+              Develops form validation and support channel integration.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- City Overview Modal Overlay -->
+    <div class="modal-overlay" id="infoModal">
+      <div class="modal-body">
+        <button class="modal-close" onclick="hideModal()">&times;</button>
+        <h2
+          id="modalTargetTitle"
+          style="
+            color: var(--brand-primary);
+            font-size: 1.5rem;
+            margin-bottom: 4px;
+          "
+        ></h2>
+
+        <p
+          id="modalTargetKey"
+          style="
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+          "
+        ></p>
+
+        <span class="review-badge"
+          ><i class="fas fa-star"></i> 4.8 Average Rating (5 Verified
+          Reviews)</span
+        >
+
+        <!-- Reviews injected via JS -->
+        <div class="reviews-container" id="reviewsContainer"></div>
+
+        <button
+          class="btn-submit"
+          style="margin-top: 20px"
+          onclick="confirmDestinationSelection()"
+        >
+          Select & Book Destination
+        </button>
+      </div>
+    </div>
+
+    <!-- Feature Details Modal Overlay -->
+    <div class="modal-overlay" id="featureModal">
+      <div class="modal-body" style="text-align: center">
+        <button class="modal-close" onclick="hideFeatureModal()">
+          &times;
+        </button>
+        <div
+          id="featureIcon"
+          class="icon-box"
+          style="
+            margin: 0 auto 15px auto;
+            width: 70px;
+            height: 70px;
+            font-size: 1.8rem;
+          "
+        ></div>
+        <h2
+          id="featureTitle"
+          style="
+            color: var(--brand-primary);
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+          "
+        ></h2>
+        <p
+          id="featureDescription"
+          style="
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 20px;
+          "
+        ></p>
+        <div
+          id="featureHighlights"
+          style="
+            text-align: left;
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid var(--border-subtle);
+            margin-bottom: 20px;
+          "
+        ></div>
+        <button class="btn-submit" onclick="hideFeatureModal()">Got it!</button>
+      </div>
+    </div>
+
+    <a href="#" class="back-to-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <div class="_footer">
+      <div class="_container">
+        <div class="logo_rights d-flex flex-column">
+          <div class="logo">
+            <img src="assets/images/logos/logo.png" alt="" />
+          </div>
+          <p>
+            All rights reserved. ©2019
+            <a href="" class="text-white">W3layouts</a>
+          </p>
+        </div>
+
+        <div class="about d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">about</p></div>
+          <a href="about.html" class="text-white">about</a>
+          <a href="services.html" class="text-white">services</a>
+        </div>
+        <div class="pages d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">pages</p></div>
+          <a href="shop.html" class="text-white">products</a>
+          <a href="contact.html" class="text-white">contact us</a>
+          <a href="login.html" class="text-white">login</a>
+          <a href="signup.html" class="text-white">signup</a>
+        </div>
+        <div class="subscribe d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">subscribe</p></div>
+          <form action="">
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                aria-label="Email"
+                aria-describedby="basic-addon2"
+              />
+              <a href="" class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-paper-plane"></i
+              ></a>
+            </div>
+          </form>
+          <p>
+            Subscribe to our mailing list and get updates to your email inbox.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

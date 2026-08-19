@@ -1,0 +1,157 @@
+/* global value */
+:root {
+  --main-color: #ff8619;
+  --second-color: #2595ff;
+  --main-txt-color: #db7112;
+  --sec-margin: 150px 0;
+}
+/* end global*/
+
+/* start bg */
+.bg_top {
+  background-image: url(../images/login-&-signup/sa.jpg);
+  background-size: cover;
+  height: 30vh;
+}
+.bg_top ._container {
+  color: white;
+}
+.bg_top ._container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 30vh;
+  align-items: center;
+}
+.bg_top ._container p {
+  font-size: large;
+  font-weight: bold;
+}
+.bg_top ._container span {
+  color: var(--main-txt-color);
+}
+/* end bg */
+
+/* start signup */
+.signup {
+  margin: var(--sec-margin);
+}
+.signup ._title {
+  margin: 20px auto;
+  width: 50%;
+}
+.signup ._title h1 {
+  color: var(--main-txt-color);
+}
+.signup ._title button {
+  width: 46%;
+  padding: 10px 20px;
+  align-items: center;
+  background-color: white;
+  border: 2px solid rgba(128, 128, 128, 0.303);
+}
+.signup ._title button:hover {
+  background-color: var(--main-color);
+}
+.fa-square-facebook {
+  color: #627aad;
+  font-size: 20px;
+}
+.fc {
+  margin-right: 30px;
+}
+.fa-square-google-plus {
+  color: #e46f61;
+  font-size: 20px;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: auto;
+  width: 50%;
+}
+
+.divider span {
+  height: 1px;
+  background-color: #ddd;
+  flex: 1;
+}
+
+.divider b {
+  color: var(--second-color);
+  text-transform: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+._form {
+  margin: 20px auto;
+  width: 50%;
+  display: flex;
+  justify-content: start;
+}
+._form form {
+  width: 100%;
+}
+._form form input {
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid rgba(128, 128, 128, 0.321);
+}
+._form form .inpt input {
+  width: 100%;
+}
+form label {
+  margin-bottom: 20px;
+}
+form button {
+  display: block;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--main-color);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+/* end signup */
+
+/* RESPONSIVE STYLES  */
+
+/*  Signup form  */
+@media (max-width: 991.98px) {
+  .signup ._title {
+    width: 80%;
+  }
+  .divider,
+  ._form {
+    width: 80%;
+  }
+}
+@media (max-width: 575.98px) {
+  .signup ._title {
+    width: 92%;
+  }
+  .signup ._title button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .fc {
+    margin-right: 0;
+  }
+  .divider,
+  ._form {
+    width: 92%;
+  }
+}
+@media (max-width: 400px) {
+  .signup ._title h1 {
+    font-size: 1.5rem;
+  }
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}

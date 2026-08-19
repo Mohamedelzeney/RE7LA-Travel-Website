@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RE7LA</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="d-flex flex-wrap justify-content-around align-items-center">
+      <div class="Mylogo">
+        <a href="home.html"
+          ><img src="assets/images/logos/logo.png" alt="" />
+        </a>
+      </div>
+      <div class="_nav">
+        <button
+          class="nav-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavMenu"
+          aria-controls="mainNavMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul
+          class="nav justify-content-end fs-6 fw-bold collapse"
+          id="mainNavMenu"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link text-custem active"
+              aria-current="page"
+              href="home.html"
+              >home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custem" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custem" href="contact.html">contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link text-custem dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              shop
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-custem" href="shop.html"
+                  >Ecommerce</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="cart.html">cart</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link text-custem dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              pages
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-custem" href="services.html"
+                  >services</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="tours.html">tours</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="gallary.html"
+                  >gallary</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="login.html">login</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item border-0">
+            <a
+              class="nav-link rounded-pill text-white bg-custem"
+              href="booking.html"
+              >book now</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner d-flex">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/home-images/coast.jpg"
+              class="d-block"
+              alt="..."
+            />
+            <div
+              class="carousel-caption m-auto text-white w-25 align-items-center justify-content-center"
+            >
+              <h5>North Coast</h5>
+              <h6 class="text-white">
+                Discover the Beauty of Egypt’s Mediterranean Coast
+              </h6>
+              <p>
+                Enjoy crystal-clear waters, golden sandy beaches, and
+                unforgettable summer experiences in Egypt’s North Coast.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/home-images/sharm.jpg"
+              class="d-block"
+              alt="..."
+            />
+            <div
+              class="carousel-caption m-auto text-white w-25 align-items-center justify-content-center"
+            >
+              <h5>Sharm El Sheikh</h5>
+              <h6 class="text-white">Discover the Magic of the Red Sea</h6>
+              <p>
+                Explore crystal-clear waters, colorful coral reefs, and
+                beautiful beaches in one of Egypt’s most stunning coastal
+                destinations.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/home-images/temple.jpg"
+              class="d-block"
+              alt="..."
+            />
+            <div
+              class="carousel-caption m-auto text-white w-25 align-items-center justify-content-center"
+            >
+              <h5>Karnak Temple</h5>
+              <h6 class="text-white">Step Into the History of Ancient Egypt</h6>
+              <p>
+                Explore the magnificent temples, massive columns, and timeless
+                monuments of Karnak Temple in the heart of Luxor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <section class="home-form">
+      <div class="_container">
+        <h4>Get the Best Holiday Planned by Experts!</h4>
+        <form action="" name="home_form">
+          <div class="inp">
+            <input type="text" name="name" placeholder="Your Name" />
+            <div class="error"></div>
+          </div>
+          <div class="inp">
+            <input type="email" name="email" placeholder="Email" />
+            <div class="error"></div>
+          </div>
+          <div class="inp">
+            <input type="tel" name="phone" placeholder="Mobile Number" />
+            <div class="error"></div>
+          </div>
+
+          <select name="date" id="">
+            <option value="">Aug 2026</option>
+            <option value="">Nov 2026</option>
+            <option value="">Dec 2026</option>
+            <option value="">Jan 2027</option>
+            <option value="">Feb 2027</option>
+            <option value="">Mar 2027</option>
+          </select>
+          <input type="submit" value="submit" />
+        </form>
+        <p>
+          By submitting this form, you authorize Travel and its partners to
+          contact you for this enquiry.
+        </p>
+      </div>
+    </section>
+
+    <div class="pop-dest">
+      <div class="_container">
+        <div class="_title">
+          <h3>Popular Destination</h3>
+          <p>
+            Explore Egypt’s most popular destinations and discover breathtaking
+            beaches, ancient landmarks, and unforgettable experiences.
+          </p>
+        </div>
+
+        <div class="_images d-grid gap-4">
+          <div class="row gap-4">
+            <div class="_card col">
+              <img src="assets/images/home-images/abusimpel.jpg" alt="" />
+              <h3>Abu simpel</h3>
+            </div>
+            <div class="_card col">
+              <img src="assets/images/home-images/karnak.jpg" alt="" />
+              <h3>karnak tempel</h3>
+            </div>
+            <div class="_card col">
+              <img src="assets/images/home-images/pyramid.jpg" alt="" />
+              <h3>Pyramids Giza</h3>
+            </div>
+          </div>
+          <div class="row gap-4">
+            <div class="_card col">
+              <img src="assets/images/home-images/hurgada.jpg" alt="" />
+              <h3>hurgada</h3>
+            </div>
+            <div class="_card col">
+              <img src="assets/images/home-images/sharmy.jpg" alt="" />
+              <h3>sharm el shiekh</h3>
+            </div>
+            <div class="_card col">
+              <img src="assets/images/home-images/siwa.jpg" alt="" />
+              <h3>siwa</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="_book">
+      <div class="_shad">
+        <div class="_container">
+          <a href="booking.html" class="fs-1 fw-bold"
+            >Buy a Tour Without Leaving Your Home</a
+          >
+          <p>
+            Using our website, you can easily find and book any tour you want.
+            Mobile users will definitely enjoy our app available on all devices.
+          </p>
+          <a class="_but rounded-pill" href="booking.html">book now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="_container">
+        <div class="_img">
+          <img class="w-100" src="assets/images/home-images/a1.jpg" alt="" />
+        </div>
+        <div class="_title">
+          <a href="" class="fs-1 fw-bold">explore a different way to travel</a>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae.
+          </p>
+          <div class="but">
+            <a href="about.html" class="rounded-pill">learn more</a>
+            <span>Explore</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="icons">
+      <div class="_container">
+        <div class="_card">
+          <a href="#" class="fa-solid fa-plane-departure"></a>
+          <div class="_title">
+            <a href="booking.html" class="fs-4 fw-bold">Air Tickets</a>
+            <p>
+              Duis aute irure dolor in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur.
+            </p>
+            <a href="booking.html">Read More</a>
+          </div>
+        </div>
+        <div class="_card">
+          <a href="#" class="fa-regular fa-thumbs-up"></a>
+          <div class="_title">
+            <a href="about.html" class="fs-4 fw-bold">Tourist Guide</a>
+            <p>
+              Ncididunt ut labore et dolore magna minim veniam, quis nostrud
+              exercitation ullamco.
+            </p>
+            <a href="about.html">Read More</a>
+          </div>
+        </div>
+        <div class="_card">
+          <a href="#" class="fa-solid fa-bed"></a>
+          <div class="_title">
+            <a href="booking.html" class="fs-4 fw-bold">Hotel Bookings</a>
+            <p>
+              Duis aute irure dolor in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur.
+            </p>
+            <a href="booking.html">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="_grid-imgs">
+      <div class="_container">
+        <div class="_card">
+          <img src="assets/images/home-images/luxer.jpg" alt="" />
+          <hr />
+          <a href="booking.html" class="fs-4 fw-bold">luxor</a>
+          <p class="fs-6">
+            start at <span class="fs-5 fw-bold">45,99.</span
+            ><span class="fs-6 fw-bold">EGP</span>
+          </p>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+          <span>4.0(22)</span>
+        </div>
+
+        <div class="_card">
+          <img src="assets/images/home-images/aswan.jpg" alt="" />
+          <hr />
+          <a href="booking.html" class="fs-4 fw-bold">aswan</a>
+          <p class="fs-6">
+            start at <span class="fs-5 fw-bold">49,99.</span
+            ><span class="fs-6 fw-bold">EGP</span>
+          </p>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+          <span>4.0(96)</span>
+        </div>
+        <div class="_card">
+          <img src="assets/images/home-images/sant.jpg" alt="" />
+          <hr />
+          <a href="booking.html" class="fs-4 fw-bold">sant cathrine</a>
+          <p class="fs-6">
+            start at <span class="fs-5 fw-bold">9099.</span
+            ><span class="fs-6 fw-bold">EGP</span>
+          </p>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+          <span>4.0(176)</span>
+        </div>
+        <div class="_card">
+          <img src="assets/images/home-images/alex.jpg" alt="" />
+          <hr />
+          <a href="booking.html" class="fs-4 fw-bold">alexandria</a>
+          <p class="fs-6">
+            start at <span class="fs-5 fw-bold">1000.</span
+            ><span class="fs-6 fw-bold">EGP</span>
+          </p>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+          <span>4.0(722)</span>
+        </div>
+        <div class="_card">
+          <img src="assets/images/home-images/ras.jpg" alt="" />
+          <hr />
+          <a href="booking.html" class="fs-4 fw-bold">ras el-bar</a>
+          <p class="fs-6">
+            start at <span class="fs-5 fw-bold">39,99.</span
+            ><span class="fs-6 fw-bold">EGP</span>
+          </p>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+          <span>4.0(76)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="_counter">
+      <div class="_container">
+        <div class="_card">
+          <p class="number-animation animate--36 fs-1 fw-bold m-0"></p>
+          <p>countries</p>
+        </div>
+        <div class="_card">
+          <p class="number-animation animate--15 fs-1 fw-bold m-0 d-inline"></p>
+          <p class="d-inline fs-2 fw-bold m-0">years</p>
+          <p>of experience</p>
+        </div>
+        <div class="_card">
+          <p class="number-animation animate--950 fs-1 fw-bold m-0"></p>
+          <p>Airlines</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="_team">
+      <div class="_container">
+        <div class="_title">
+          <h2 class="fw-bold fs-1">Our Wonderful Team</h2>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <div class="_row">
+          <div class="_col">
+            <img src="assets/images/home-images/man1.jpg" alt="" />
+            <div class="_txt">
+              <h3>mohemed</h3>
+              <p>Tour Guide</p>
+              <div class="_icons">
+                <a
+                  href="#"
+                  class="fa-brands fa-square-x-twitter fs-3 text-black"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-square-facebook fs-3 text-black"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-square-instagram fs-3 text-black"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="_col">
+            <img src="assets/images/home-images/man2.jpg" alt="" />
+            <div class="_txt">
+              <h3>ziad</h3>
+              <p>Tour Consultant</p>
+              <div class="_icons">
+                <a
+                  href="#"
+                  class="fa-brands fa-square-x-twitter fs-3 text-black"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-square-facebook fs-3 text-black"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-square-instagram fs-3 text-black"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="_col">
+            <img src="assets/images/home-images/man3.jpg" alt="" />
+            <div class="_txt">
+              <h3>abd elrahman</h3>
+              <p>Travel Agent</p>
+              <div class="_icons">
+                <a
+                  href="#"
+                  class="fa-brands fa-square-x-twitter fs-3 text-black"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-square-facebook fs-3 text-black"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-square-instagram fs-3 text-black"
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="_col">
+            <img src="assets/images/home-images/man4.jpg" alt="" />
+            <div class="_txt">
+              <h3>islam</h3>
+              <p>Agency Director</p>
+              <div class="_icons">
+                <a
+                  href="#"
+                  class="fa-brands fa-square-x-twitter fs-3 text-black"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-square-facebook fs-3 text-black"
+                ></a>
+                <a
+                  href="#"
+                  class="fa-brands fa-square-instagram fs-3 text-black"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clients">
+      <div class="_title">
+        <h2 class="fs-1 fw-bold">clients say</h2>
+      </div>
+
+      <div class="_slider_coments">
+        <div class="_slide_track">
+          <div class="col _slide">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text my-3">
+                  I had a wonderful experience exploring Cairo. Everything was
+                  well organized, and visiting the historical places was truly
+                  unforgettable.
+                </p>
+              </div>
+
+              <div class="img_txt">
+                <div class="_img">
+                  <img src="assets/images/home-images/pr1.jpg" alt="" />
+                </div>
+                <div class="_txt">
+                  <h4>Mariam Adel</h4>
+                  <p>Happy Traveler</p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <small class="text-body-secondary"
+                  >Last updated 2 days ago</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col _slide">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text my-3">
+                  The trip was amazing from start to finish. I really enjoyed
+                  the beautiful views and the friendly atmosphere everywhere we
+                  went.
+                </p>
+              </div>
+
+              <div class="img_txt">
+                <div class="_img">
+                  <img src="assets/images/home-images/pr2.jpg" alt="" />
+                </div>
+                <div class="_txt">
+                  <h4>Ahmed Hassan</h4>
+                  <p>Regular Client</p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <small class="text-body-secondary"
+                  >Last updated 4 days ago</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col _slide">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text my-3">
+                  I really enjoyed my visit to Sharm El Sheikh. The beaches were
+                  beautiful, and the whole experience was relaxing and
+                  enjoyable.
+                </p>
+              </div>
+
+              <div class="img_txt">
+                <div class="_img">
+                  <img src="assets/images/home-images/pr3.jpg" alt="" />
+                </div>
+                <div class="_txt">
+                  <h4>Nour Ahmed</h4>
+                  <p>Tourist</p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <small class="text-body-secondary"
+                  >Last updated 1 week ago</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col _slide">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text my-3">
+                  One of the best travel experiences I have ever had. The
+                  historical sites were incredible, and I learned so much about
+                  Egyptian culture.
+                </p>
+              </div>
+
+              <div class="img_txt">
+                <div class="_img">
+                  <img src="assets/images/home-images/pr4.jpg" alt="" />
+                </div>
+                <div class="_txt">
+                  <h4>Omar Khaled</h4>
+                  <p>Happy Traveler</p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <small class="text-body-secondary"
+                  >Last updated 1 week ago</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col _slide">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text my-3">
+                  The entire journey was comfortable and well planned. I loved
+                  the Egyptian food, culture, and the amazing places we visited.
+                </p>
+              </div>
+
+              <div class="img_txt">
+                <div class="_img">
+                  <img src="assets/images/home-images/pr5.jpg" alt="" />
+                </div>
+                <div class="_txt">
+                  <h4>Salma Mahmoud</h4>
+                  <p>Regular Client</p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <small class="text-body-secondary"
+                  >Last updated 2 weeks ago</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col _slide">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text my-3">
+                  The trip was full of amazing moments. I especially loved the
+                  historical landmarks and the beautiful atmosphere throughout
+                  Egypt.
+                </p>
+              </div>
+
+              <div class="img_txt">
+                <div class="_img">
+                  <img src="assets/images/home-images/pr6.jpg" alt="" />
+                </div>
+                <div class="_txt">
+                  <h4>Youssef Mohamed</h4>
+                  <p>Tourist</p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <small class="text-body-secondary"
+                  >Last updated 3 weeks ago</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="back-to-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <div class="_footer">
+      <div class="_container">
+        <div class="logo_rights d-flex flex-column">
+          <div class="logo">
+            <img src="assets/images/logos/logo.png" alt="" />
+          </div>
+          <p>
+            All rights reserved. ©2019
+            <a href="" class="text-white">W3layouts</a>
+          </p>
+        </div>
+
+        <div class="about d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">about</p></div>
+          <a href="about.html" class="text-white">about</a>
+          <a href="services.html" class="text-white">services</a>
+        </div>
+        <div class="pages d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">pages</p></div>
+          <a href="shop.html" class="text-white">products</a>
+          <a href="contact.html" class="text-white">contact us</a>
+          <a href="login.html" class="text-white">login</a>
+          <a href="signup.html" class="text-white">signup</a>
+        </div>
+        <div class="subscribe d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">subscribe</p></div>
+          <form action="">
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                aria-label="Email"
+                aria-describedby="basic-addon2"
+              />
+              <a href="" class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-paper-plane"></i
+              ></a>
+            </div>
+          </form>
+          <p>
+            Subscribe to our mailing list and get updates to your email inbox.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/home.js"></script>
+  </body>
+</html>

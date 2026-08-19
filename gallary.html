@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gallery - RE7LA</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/serv-gall.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="d-flex flex-wrap justify-content-around align-items-center">
+      <div class="Mylogo">
+        <a href="home.html"
+          ><img src="assets/images/logos/logo.png" alt="" />
+        </a>
+      </div>
+      <div class="_nav">
+        <button
+          class="nav-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavMenu"
+          aria-controls="mainNavMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav justify-content-end fs-6 fw-bold collapse" id="mainNavMenu">
+          <li class="nav-item">
+            <a
+              class="nav-link text-custem active"
+              aria-current="page"
+              href="home.html"
+              >home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custem" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custem" href="contact.html">contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link text-custem dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              shop
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-custem" href="shop.html"
+                  >Ecommerce</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="cart.html">cart</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link text-custem dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              pages
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-custem" href="services.html"
+                  >services</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="tours.html">tours</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="gallary.html"
+                  >gallary</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="login.html">login</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item border-0">
+            <a
+              class="nav-link rounded-pill text-white bg-custem"
+              href="booking.html"
+              >book now</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url(&quot;assets/images/serv-gall/bb.jpeg&quot;)">
+      <div class="hero-content">
+        <h1>Explore Egypt</h1>
+
+        <h2>Discover Egypt Through Our Gallery</h2>
+
+        <p>
+          Discover the beauty of Egypt through breathtaking views, ancient
+          landmarks, stunning beaches, and unforgettable moments.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Grid Section -->
+    <section class="container">
+      <div class="section-header">
+        <h4>Gallery Filter Section</h4>
+
+        <h2>Explore Our Gallery</h2>
+      </div>
+
+      <div class="gallery-filter">
+        <button class="filter-btn active">All</button>
+
+        <button class="filter-btn">Cairo</button>
+
+        <button class="filter-btn">Beaches</button>
+
+        <button class="filter-btn">Historical</button>
+
+        <button class="filter-btn">Desert</button>
+
+        <button class="filter-btn">Nile</button>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- 1 -->
+        <div class="gallery-item">
+          <img
+            src="assets/images/serv-gall/pyramidsphoto.jpeg"
+            alt="Pyramids of Giza"
+            data-category="Cairo"
+          />
+
+          <div class="gallery-item-info">
+            <h4>Pyramids of Giza</h4>
+
+            <i class="fa-regular fa-image"></i>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="gallery-item">
+          <img
+            src="assets/images/serv-gall/musuim.photo.jpeg"
+            alt="Egyptian Museum"
+            data-category="Cairo"
+          />
+
+          <div class="gallery-item-info">
+            <h4>Egyptian Museum</h4>
+
+            <i class="fa-regular fa-image"></i>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="gallery-item">
+          <img src="assets/images/serv-gall/nileriver.jpg" alt="Nile River" data-category="Nile" />
+
+          <div class="gallery-item-info">
+            <h4>Nile River</h4>
+
+            <i class="fa-regular fa-image"></i>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="gallery-item">
+          <img
+            src="assets/images/serv-gall/luxortample.jpeg"
+            alt="Luxor Temple"
+            data-category="Historical"
+          />
+
+          <div class="gallery-item-info">
+            <h4>Luxor Temple</h4>
+
+            <i class="fa-regular fa-image"></i>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="gallery-item">
+          <img
+            src="assets/images/serv-gall/karnakphoto.jpeg"
+            alt="Karnak Temple"
+            data-category="Historical"
+          />
+
+          <div class="gallery-item-info">
+            <h4>Karnak Temple</h4>
+
+            <i class="fa-regular fa-image"></i>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gallery-item">
+          <img
+            src="assets/images/serv-gall/abusumple.jpeg"
+            alt="Abu Simbel"
+            data-category="Historical"
+          />
+
+          <div class="gallery-item-info">
+            <h4>Abu Simbel</h4>
+
+            <i class="fa-regular fa-image"></i>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="gallery-item">
+          <img
+            src="assets/images/serv-gall/sharmphoto.jpeg"
+            alt="Sharm El Sheikh"
+            data-category="Beaches"
+          />
+
+          <div class="gallery-item-info">
+            <h4>Sharm El Sheikh</h4>
+
+            <i class="fa-regular fa-image"></i>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="gallery-item">
+          <img src="assets/images/serv-gall/hurghada.jpeg" alt="Hurghada" data-category="Beaches" />
+
+          <div class="gallery-item-info">
+            <h4>Hurghada</h4>
+
+            <i class="fa-regular fa-image"></i>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="gallery-item">
+          <img
+            src="assets/images/serv-gall/whitedesert.jpeg"
+            alt="White Desert"
+            data-category="Desert"
+          />
+
+          <div class="gallery-item-info">
+            <h4>White Desert</h4>
+
+            <i class="fa-regular fa-image"></i>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="gallery-item">
+          <img src="assets/images/serv-gall/Aswan nile photo.jpeg" alt="Aswan" data-category="Nile" />
+
+          <div class="gallery-item-info">
+            <h4>Aswan</h4>
+
+            <i class="fa-regular fa-image"></i>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="gallery-item">
+          <img
+            src="assets/images/serv-gall/Alexandria photo.jpeg"
+            alt="Alexandria"
+            data-category="beaches"
+          />
+
+          <div class="gallery-item-info">
+            <h4>Alexandria</h4>
+
+            <i class="fa-regular fa-image"></i>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="gallery-item">
+          <img src="assets/images/serv-gall/siwa.jpeg" alt="Siwa Oasis" data-category="Desert" />
+
+          <div class="gallery-item-info">
+            <h4>Siwa Oasis</h4>
+
+            <i class="fa-regular fa-image"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discover Egypt Split -->
+    <section class="container split-section">
+      <div class="split-img">
+        <img src="assets/images/serv-gall/discover.jpeg" alt="Discover Egypt" />
+      </div>
+
+      <div class="split-content">
+        <h2>Discover Egypt</h2>
+
+        <p style="color: var(--text-light); margin: 20px 0">
+          From the ancient pyramids of Giza to the crystal-clear waters of the
+          Red Sea, Egypt offers a journey through history, culture, and nature.
+        </p>
+
+        <button class="btn-book"><a href="tours.html">Explore Destinations</a></button>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <h2>Your Egyptian Adventure Awaits</h2>
+
+      <p>
+        Explore the places you've seen in our gallery and start planning your
+        unforgettable journey.
+      </p>
+
+      <div class="cta-buttons">
+        <button class="btn-book"><a href="tours.html">Explore Destinations</a></button>
+
+        <a href="booking.html" class="btn-outline"> Book Your Trip </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <a href="#" class="back-to-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <div class="_footer">
+      <div class="_container">
+        <div class="logo_rights d-flex flex-column">
+          <div class="logo">
+            <img src="assets/images/logos/logo.png" alt="" />
+          </div>
+          <p>
+            All rights reserved. ©2019
+            <a href="" class="text-white">W3layouts</a>
+          </p>
+        </div>
+
+        <div class="about d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">about</p></div>
+          <a href="about.html" class="text-white">about</a>
+          <a href="services.html" class="text-white">services</a>
+        </div>
+        <div class="pages d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">pages</p></div>
+          <a href="shop.html" class="text-white">products</a>
+          <a href="contact.html" class="text-white">contact us</a>
+          <a href="login.html" class="text-white">login</a>
+          <a href="signup.html" class="text-white">signup</a>
+        </div>
+        <div class="subscribe d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">subscribe</p></div>
+          <form action="">
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                aria-label="Email"
+                aria-describedby="basic-addon2"
+              />
+              <a href="" class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-paper-plane"></i
+              ></a>
+            </div>
+          </form>
+          <p>
+            Subscribe to our mailing list and get updates to your email inbox.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/serv-gall.js"></script>
+  </body>
+</html>

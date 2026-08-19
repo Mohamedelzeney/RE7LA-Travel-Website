@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style_booking.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- booking page styles -->
+    <link rel="stylesheet" href="assets/css/booking.css" />
+  </head>
+  <body>
+    <header class="d-flex flex-wrap justify-content-around align-items-center">
+      <div class="Mylogo">
+        <a href="home.html"
+          ><img src="assets/images/logos/logo.png" alt="" />
+        </a>
+      </div>
+      <div class="_nav">
+        <button
+          class="nav-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavMenu"
+          aria-controls="mainNavMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav justify-content-end fs-6 fw-bold collapse" id="mainNavMenu">
+          <li class="nav-item">
+            <a
+              class="nav-link text-custem active"
+              aria-current="page"
+              href="home.html"
+              >home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custem" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custem" href="contact.html">contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link text-custem dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              shop
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-custem" href="shop.html"
+                  >Ecommerce</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="cart.html">cart</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link text-custem dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              pages
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-custem" href="services.html"
+                  >services</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="tours.html">tours</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="gallary.html"
+                  >gallary</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-custem" href="login.html">login</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item border-0">
+            <a
+              class="nav-link rounded-pill text-white bg-custem"
+              href="booking.html"
+              >book now</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ================= BOOKING ================= -->
+    <div class="bk-wrap">
+      <div class="bk-intro">
+        <h1 class="fs-2">Book Your Trip</h1>
+        <p>Three quick steps and your trip is reserved.</p>
+      </div>
+
+      <div class="bk-tracker">
+        <div class="bk-stops" id="bkStopsRow">
+          <div class="bk-stop active" data-step="1"><span class="dot"></span><span class="lbl">Choose Trip</span></div>
+          <div class="bk-stop" data-step="2"><span class="dot"></span><span class="lbl">Your Details</span></div>
+          <div class="bk-stop" data-step="3"><span class="dot"></span><span class="lbl">Review &amp; Confirm</span></div>
+        </div>
+        <div class="bk-track-line"><div class="bk-track-fill" id="bkTrackFill"></div></div>
+      </div>
+
+      <div class="bk-card">
+
+        <!-- STEP 1: choose trip -->
+        <section class="bk-pane active" id="bkPane1">
+          <h2 class="bk-step-title fs-4">Choose Your Trip</h2>
+          <p class="bk-step-sub">Filter by destination, type or duration, then pick a trip.</p>
+
+          <div class="bk-filters">
+            <select id="destinationFilter">
+              <option value="all">All Destinations</option>
+              <option value="cairo">Cairo</option>
+              <option value="luxor">Luxor</option>
+              <option value="aswan">Aswan</option>
+              <option value="hurghada">Hurghada</option>
+            </select>
+            <select id="typeFilter">
+              <option value="all">Trip Type</option>
+              <option value="historical">Historical</option>
+              <option value="beach">Beach</option>
+              <option value="adventure">Adventure</option>
+            </select>
+            <select id="tripFilter">
+              <option value="all">Trip Duration</option>
+              <option value="day">Day Trip</option>
+              <option value="package">Package</option>
+            </select>
+          </div>
+
+          <div class="tour-container" id="tourContainer"></div>
+
+          <div class="bk-actions">
+            <span></span>
+            <button class="bk-btn bk-btn-primary" id="bkToStep2" disabled>Next</button>
+          </div>
+        </section>
+
+        <!-- STEP 2: traveler details -->
+        <section class="bk-pane" id="bkPane2">
+          <h2 class="bk-step-title fs-4">Your Details</h2>
+          <p class="bk-step-sub">We'll use this info on your booking ticket.</p>
+
+          <div class="bk-selected-trip" id="bkSelectedTrip"></div>
+
+          <div class="bk-field" id="bk-f-name">
+            <label for="bkFullName">Full name</label>
+            <input type="text" id="bkFullName" placeholder="e.g. John Smith">
+            <div class="bk-err">Please enter your full name</div>
+          </div>
+
+          <div class="bk-row2">
+            <div class="bk-field" id="bk-f-email">
+              <label for="bkEmail">Email</label>
+              <input type="email" id="bkEmail" placeholder="name@example.com">
+              <div class="bk-err">Please enter a valid email</div>
+            </div>
+            <div class="bk-field" id="bk-f-phone">
+              <label for="bkPhone">Phone number</label>
+              <input type="tel" id="bkPhone" placeholder="e.g. 01xxxxxxxxx">
+              <div class="bk-err">Please enter a valid phone number</div>
+            </div>
+          </div>
+
+          <div class="bk-row2">
+            <div class="bk-field" id="bk-f-date">
+              <label for="bkTripDate">Travel date</label>
+              <input type="date" id="bkTripDate">
+              <div class="bk-err">Please choose a date from today onward</div>
+            </div>
+            <div class="bk-field" id="bk-f-count">
+              <label for="bkTravelers">Number of travelers</label>
+              <input type="number" id="bkTravelers" min="1" max="20" value="1">
+              <div class="bk-err">Enter a number between 1 and 20</div>
+            </div>
+          </div>
+
+          <div class="bk-field">
+            <label for="bkNotes">Special requests <span style="font-weight:400;color:var(--bk-ink-soft);">(optional)</span></label>
+            <textarea id="bkNotes" rows="3" placeholder="Dietary needs, accessibility, celebrations..."></textarea>
+          </div>
+
+          <div class="bk-price-box">
+            <span>Estimated total</span>
+            <span class="total" id="bkLiveTotal">EGP 0</span>
+          </div>
+
+          <div class="bk-actions">
+            <button class="bk-btn bk-btn-ghost" id="bkToStep1">Back</button>
+            <button class="bk-btn bk-btn-primary" id="bkToStep3">Review Booking</button>
+          </div>
+        </section>
+
+        <!-- STEP 3: review & confirm -->
+        <section class="bk-pane" id="bkPane3">
+          <h2 class="bk-step-title fs-4">Review Your Booking</h2>
+          <p class="bk-step-sub">If everything looks right, confirm to get your booking reference.</p>
+
+          <div class="bk-ticket">
+            <div class="bk-ticket-top">
+              <div class="bk-ticket-route">
+                <span class="bk-ticket-city">Cairo, EG</span>
+                <span class="bk-ticket-line"></span>
+                <span class="bk-ticket-city" id="bkTkTo">—</span>
+              </div>
+              <div class="bk-ticket-grid">
+                <div><div class="t-label">Traveler</div><div class="t-value" id="bkTkName">—</div></div>
+                <div><div class="t-label">Date</div><div class="t-value" id="bkTkDate">—</div></div>
+                <div><div class="t-label">Travelers</div><div class="t-value" id="bkTkCount">—</div></div>
+                <div><div class="t-label">Duration</div><div class="t-value" id="bkTkDuration">—</div></div>
+                <div><div class="t-label">Contact</div><div class="t-value" id="bkTkContact">—</div></div>
+                <div><div class="t-label">Total</div><div class="t-value" id="bkTkTotal">—</div></div>
+              </div>
+            </div>
+            <div class="bk-ticket-perf">
+              <span class="bk-ref-label">Booking Reference</span>
+              <span class="bk-ref-code" id="bkRefCode">— — — —</span>
+            </div>
+          </div>
+
+          <div class="bk-confirm-banner" id="bkConfirmBanner" style="display:none;">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Booking confirmed! Keep your reference number safe.</span>
+          </div>
+
+          <div class="bk-actions">
+            <button class="bk-btn bk-btn-ghost" id="bkToStep2b">Back</button>
+            <button class="bk-btn bk-btn-primary" id="bkConfirmBtn">Confirm Booking</button>
+          </div>
+        </section>
+
+      </div>
+    </div>
+    <br><br>
+
+    <a href="#" class="back-to-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <div class="_footer">
+      <div class="_container">
+        <div class="logo_rights d-flex flex-column">
+          <div class="logo">
+            <img src="assets/images/logos/logo.png" alt="" />
+          </div>
+          <p>
+            All rights reserved. ©2019
+            <a href="" class="text-white">W3layouts</a>
+          </p>
+        </div>
+
+        <div class="about d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">about</p></div>
+          <a href="about.html" class="text-white">about</a>
+          <a href="services.html" class="text-white">services</a>
+        </div>
+        <div class="pages d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">pages</p></div>
+          <a href="shop.html" class="text-white">products</a>
+          <a href="contact.html" class="text-white">contact us</a>
+          <a href="login.html" class="text-white">login</a>
+          <a href="signup.html" class="text-white">signup</a>
+        </div>
+        <div class="subscribe d-flex flex-column">
+          <div class="_head"><p class="fs-5 fw-bold">subscribe</p></div>
+          <form action="">
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                aria-label="Email"
+                aria-describedby="basic-addon2"
+              />
+              <a href="" class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-paper-plane"></i
+              ></a>
+            </div>
+          </form>
+          <p>
+            Subscribe to our mailing list and get updates to your email inbox.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- booking page logic -->
+    <script src="assets/js/blugin_booking.js"></script>
+  </body>
+</html>
