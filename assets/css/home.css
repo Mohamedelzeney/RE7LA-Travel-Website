@@ -320,8 +320,8 @@
   }
 }
 .animate--950 {
-  animation: counter--950 5s ease-out forwards;
-  -webkit-animation: counter--950 5s ease-out forwards;
+  animation: counter--950 5s ease forwards;
+  -webkit-animation: counter--950 5s ease forwards;
 }
 /* end counter  */
 /* start team  */
